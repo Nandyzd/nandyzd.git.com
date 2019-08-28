@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示</title>
+</head>
+<body onLoad="queren();">
+<script type="text/javascript">
+function queren() {
+
+    var se = confirm("学生已存在，添加失败!");
+
+    if (se == true) {
+        window.location.href="{{ url_for('add1suceess') }}";
+    } else {
+         window.location.href="{{ url_for('add1suceess') }}";
+
+    }
+    {#window.onload("{{ url_for("add1suceess") }}", "_self");#}
+    {##}
+    {#function testclick() {#}
+    {#    window.location.href="{{ url_for("add1suceess") }}";#}
+}
+</script>
+</table>
+</body>
+
+</html>

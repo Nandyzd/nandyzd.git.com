@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提示</title>
+</head>
+<body onLoad="queren();">
+<script type="text/javascript">
+function queren() {
+
+    var se = confirm("操作成功!");
+
+    if (se == true) {
+        window.location.href="{{ url_for("add1suceess") }}";
+    } else {
+         window.location.href="{{ url_for("add1suceess") }}";
+
+    }
+}
+</script>
+</body>
+</html>
